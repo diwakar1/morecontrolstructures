@@ -1,0 +1,117 @@
+
+
+
+1. Read and sort letters
+Design an algorithm that will prompt the user for three letters, receive those letters as input, sort them into ascending sequence
+ and display them to the monitor
+ 
+ input
+ letter 1
+ letter 2
+ letter 3
+ 
+ process
+ prompt to enter three letters
+ sort the letters in ascending order
+ display the letters in ascending orders
+ 
+ output
+ three letters in ascending sequence
+ 
+ psedocode
+ enter three letters 
+ sort the letters in ascending order
+ display the letters in ascending orders
+ print three letters in ascending sequence.
+ 
+2. Process customer record
+A program is required to read a customer’s name, a purchase amount and a tax code. 
+The tax code has been validated and will be one of the following:
+    0  tax exempt (0%)
+    1  state sales tax only (3%)
+    2  federal and state sales tax (5%)
+    3  special sales tax (7%)
+The program must then compute the sales tax and the total amount due,and print the customer’s name, 
+purchase amount, sales tax and total amount due.
+
+inputs
+customer_name
+purchase_amount
+tax_code
+
+outputs
+customer_name
+purchase_amount
+sales_tax
+total_amount_due
+
+processing steps
+read customer_name, purchase_amount, tax_code
+
+set taxcode_percent = 0
+if tax_code = 1 then
+tax_code percent = 3
+else if tax_code = 2 then
+tax_code percent = 5
+else if tax_code = 3 then
+tax_code percent = 7
+
+pseducode
+read customer_name, purchase_amount, tax_code
+set taxcode_percent = 0
+if tax_code = 1 then
+tax_code percent = 3
+else if tax_code = 2 then
+tax_code percent = 5
+else if tax_code = 3 then
+tax_code percent = 7
+display customer_name, purchase_amount, sales_tax, tax_code
+
+3. Calculate employee's pay
+A program is required by a company to read an employee’s number, pay rate and the
+ number of hours worked in a week. The program is then to validate the pay rate field 
+ and the hours worked field and, if valid, compute the employee’s weekly pay and then print it and the input data.
+
+Validation: According to the company’s rules, the maximum hours an employee can work per week is 60 hours, and
+ the maximum hourly rate is $25.00 per hour. If the hours worked field or the hourly rate field is out of range, 
+ the input data and an appropriate message are to be printed and the employee’s weekly pay is not to be calculated.
+
+Weekly pay calculation: Weekly pay is calculated as hours worked times pay rate. If more than 35 hours are worked, payment for the overtime hours worked is calculated at time-and-a-half.
+
+input
+employee number
+maximum hours an employee can work
+maximum hourly  pay rate
+
+output
+ output employee's weekly pay
+
+processing
+get pay_rate, hours_rate
+if hours _worked >60 or pay_rate > 25 then
+print "Employee can not work"
+else if hours_worked > 35 then
+overtime = hours worked - 35
+total_pay = ( 35 * pay_rate) + ( overtime * pay_rate * 1.5)
+else  
+total _pay = hours worked *pay_rate
+
+
+psedocode
+read employee number, maximum hours an emplotee work and maximum hourly pay rate
+set maximum hours an employee can work = 60
+set maximum hourly rate = 25
+if hours _worked >60 or pay_rate > 25 then
+print "Employee can not work"
+else if hours_worked > 35 then
+overtime = hours worked - 35
+total_pay = ( 35 * pay_rate) + ( overtime * pay_rate * 1.5)
+else  
+total _pay = hours worked *pay_rate
+print employee's number, pay rate, number of ours worked, weekly total_pay
+
+
+
+
+
+
